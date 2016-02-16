@@ -468,7 +468,7 @@ signs_lib.update_sign = function(pos, fields, owner)
 
 		meta:set_string("infotext", ownstr..string.gsub(make_infotext(fields.text), "@KEYWORD", current_keyword).." ")
 		meta:set_string("text", fields.text)
-		
+
 		meta:set_int("__signslib_new_format", 1)
 		new = true
 	else
@@ -501,7 +501,7 @@ signs_lib.update_sign = function(pos, fields, owner)
 	elseif signnode.name == "signs:sign_hanging" then
 		sign_info = signs_lib.hanging_sign_model.textpos[minetest.get_node(pos).param2 + 1]
 	elseif string.find(signnode.name, "sign_wall") then
-		if signnode.name == "default:sign_wall" 
+		if signnode.name == "default:sign_wall"
 		  or signnode.name == "locked_sign:sign_wall_locked" then
 			sign_info = signs_lib.regular_wall_sign_model.textpos[minetest.get_node(pos).param2 + 1]
 		else
