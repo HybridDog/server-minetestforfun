@@ -246,7 +246,6 @@ minetest.register_node("default:mossycobble", {
 			--{items = {"maptools:silver_coin"}, rarity = 64},
 		},
 	},
-	groups = {cracky = 3},
 	sounds = default.node_sound_stone_defaults(),
 })
 
@@ -285,7 +284,7 @@ minetest.register_node("default:desert_stonebrick", {
 minetest.register_node("default:sandstone", {
 	description = "Sandstone",
 	tiles = {"default_sandstone.png"},
-	groups = {crumbly=1,cracky=3},
+	groups = {crumbly = 1,cracky = 3},
 	sounds = default.node_sound_stone_defaults(),
 })
 
@@ -293,7 +292,7 @@ minetest.register_node("default:sandstonebrick", {
 	description = "Sandstone Brick",
 	tiles = {"default_sandstone_brick.png"},
 	is_ground_content = false,
-	groups = {cracky=2},
+	groups = {cracky = 2},
 	sounds = default.node_sound_stone_defaults(),
 })
 
@@ -330,7 +329,7 @@ minetest.register_node("default:obsidianbrick", {
 minetest.register_node("default:dirt", {
 	description = "Dirt",
 	tiles = {"default_dirt.png"},
-	groups = {crumbly=3, soil=1},
+	groups = {crumbly = 3, soil = 1},
 	drop = {
 		items = {
 			{items = {"default:dirt"}},
@@ -345,14 +344,14 @@ minetest.register_node("default:dirt_with_grass", {
 	tiles = {"default_grass.png", "default_dirt.png",
 		{name = "default_dirt.png^default_grass_side.png",
 			tileable_vertical = false}},
-	groups = {crumbly=3,soil=1},
+	groups = {crumbly = 3, soil = 1},
 	drop = {
 		items = {
 			{items = {"default:dirt"}},
 		},
 	},
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name="default_grass_footstep", gain=0.8},
+		footstep = {name = "default_grass_footstep", gain = 0.8},
 	}),
 })
 
@@ -428,7 +427,7 @@ minetest.register_node("default:desert_sand", {
 minetest.register_node("default:gravel", {
 	description = "Gravel",
 	tiles = {"default_gravel.png"},
-	groups = {crumbly=2, falling_node=1},
+	groups = {crumbly = 2, falling_node = 1},
 	drop = {
 		items = {
 			{items = {"default:gravel"}},
@@ -1492,7 +1491,7 @@ minetest.register_node("default:water_flowing", {
 	post_effect_color = {a = 103, r = 30, g = 60, b = 90},
 	liquid_range = 6,
 	groups = {water = 3, liquid = 3, puts_out_fire = 1,
-		not_in_creative_inventory=1},
+		not_in_creative_inventory = 1},
 })
 
 minetest.register_node("default:river_water_source", {
@@ -1870,7 +1869,7 @@ minetest.register_node("default:torch", {
 	},
 	groups = {choppy = 2, dig_immediate = 3, flammable = 1, attached_node = 1,
 		hot = 2},
-	legacy_wallmounter = true,
+	legacy_wallmounted = true,
 	sounds = default.node_sound_wood_defaults(),
 })
 
